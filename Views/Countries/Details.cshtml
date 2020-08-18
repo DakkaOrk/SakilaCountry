@@ -1,0 +1,36 @@
+﻿@model SakilaCountry.Models.Country
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Country</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.country)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.country)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.last_update)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.last_update)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Extraterrestrials)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Extraterrestrials)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.country_id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
